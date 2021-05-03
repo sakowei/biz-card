@@ -1,0 +1,33 @@
+@charset "UTF-8";body{background-color:#efefef;color:#333}
+p{margin:0;padding:0}
+a{color:#333;text-decoration:none}
+a:hover{color:#11b2f6}
+.iconfont{font-family:"iconfont" !important;font-size:24px;font-style:normal}
+.line{position:relative;bottom:.2em;color:#11b2f6;font-size:10px}
+span{display:inline-block}
+.wrapper{position:relative;margin:2.6em auto;display:flex;justify-content:center;align-items:center;transition:all .8s;transition-timing-function:ease-in-out;width:calc(720px*.6);height:calc(1100px*.6);perspective:1000;transform-style:preserve-3d}
+.wrapper .card{position:absolute;top:0;left:0;width:100%;height:100%;border-radius:20px;background-color:#fff;overflow:hidden;backface-visibility:hidden;user-select:none}
+.wrapper:active{transform:rotateY(180deg)}
+.wrapper .front{z-index:2}
+.wrapper .back{transform:rotateY(180deg)}
+.cover{width:100%;height:calc(260px*.6);background:url("img/cover1.jpg") no-repeat 0 24% / cover}
+.avatar{position:absolute;top:15%;left:6%;border:4px solid #fff;border-radius:30%;width:calc(160px*.6);height:calc(160px*.6);background:url("img/avatar.jpg") no-repeat 0 0/cover}
+.quote{position:absolute;top:26%;right:6%;color:rgba(0,0,0,.4);font-size:1.05rem}
+.info{position:absolute;top:32%;left:8%}
+.info .nick{font-size:calc(40px*.6);font-weight:bold;color:#333}
+.info .ic-check{position:relative;bottom:.2em;left:.6em;font-size:.9em;color:#11b2f6}
+.info .rcwei{display:block;margin:.8em 0;font-size:.9em;color:rgba(0,0,0,.4)}
+.soc-icon{display:flex;justify-content:space-between;align-items:stretch;margin:.6em 0 0 0}
+.soc-icon span{font-size:1.5em}
+.soc-icon span:first-child{padding-left:0}
+.soc-icon .ic-github{font-size:1.3em}
+.intro{position:absolute;top:50%;left:8%;display:flex;flex-flow:column;font-size:.9em}
+article{margin:.8em 0}
+article:first-child{margin-top:0}
+article p span{padding:0 .6em}
+article p a{color:#11b2f6}
+article p a:hover{color:dodgerblue}
+.intro article .title{color:rgba(0,0,0,.4);margin-bottom:.1em}
+.blue-trig{position:absolute;right:-21%;bottom:-14%;padding:.32em;width:180px;height:180px;background-color:#11b2f666;transform:rotate(-45deg);color:#fff;text-align:center;font-size:1.3em;box-sizing:border-box;letter-spacing:.2em}
+.back .intro{top:2.4em}
+.back .back-img{position:absolute;right:0;bottom:0;width:calc(450px*.6);height:calc(390px*.6);background:url("img/back.png") no-repeat 0 0/cover}
